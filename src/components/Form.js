@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setNameList } from "../creatingSlice";
 
-export const Form = ({ addToList }) => {
+export const Form = () => {
   const [name, setName] = useState("");
+
+  const dispatch = useDispatch();
 
   const handleOnChange = (e) => {
     const { value } = e.target;
@@ -12,7 +16,8 @@ export const Form = ({ addToList }) => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    addToList(name);
+
+    dispatch(setNameList(name));
   };
   return (
     <div>

@@ -1,23 +1,14 @@
-import { useState } from "react";
 import "./App.css";
-import { Container } from "./components/Container";
+import { Display } from "./components/Display";
 
 import { Form } from "./components/Form";
 
 function App() {
-  const [nameList, setNameList] = useState([]);
-
-  const addToList = (name) => {
-    setNameList([...nameList, name]);
-  };
-
   return (
     <div className="d-flex text-center">
-      <Form addToList={addToList} />
-
+      <Form />
       <hr />
-
-      <Container nameList={nameList} />
+      <Display />
     </div>
   );
 }

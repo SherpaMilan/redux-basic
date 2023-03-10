@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import itemReducerrr from "./creatingSlice";
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    nameList: [],
+    //place your data as file.
+    firstItem: itemReducerrr,
   },
 });

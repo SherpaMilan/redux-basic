@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+1. create store and connect with the app
+2. create slice
+3.
+4.
+5.
+
 ## Available Scripts
 
 In the project directory, you can run:
